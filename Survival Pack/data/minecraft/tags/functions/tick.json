@@ -1,0 +1,15 @@
+{
+  "values": [
+			"survival_pack_system:main",
+			"survival_pack_system:vein_miner/coal/mine",
+			"survival_pack_system:vein_miner/iron/mine",
+			"survival_pack_system:vein_miner/diamond/mine",
+			"survival_pack_system:vein_miner/quartz/mine",
+			"survival_pack_system:vein_miner/lapis/mine",
+			"survival_pack_system:vein_miner/gold/mine",
+			"survival_pack_system:vein_miner/redstone/mine",
+			"survival_pack_system:crop_replanter/replant",
+			"survival_pack_system:chop",
+			"survival_pack_system:mob_heads/main"
+			]
+}
