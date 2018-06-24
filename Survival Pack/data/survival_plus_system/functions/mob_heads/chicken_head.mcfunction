@@ -1,0 +1,5 @@
+#Use 1.13 Parsing
+execute as @e[nbt={Item:{id:"minecraft:player_head",tag:{SkullOwner:{Id:"7d3a8ace-e045-4eba-ab71-71dbf525daf1"}}}},scores={head_crafting=0..0}] at @s if entity @e[nbt={Item:{id:"minecraft:dragon_breath",Count:4b}},distance=..1,limit=1] if block ~ ~ ~ minecraft:cauldron[level=3] if block ~1 ~ ~ #minecraft:stairs if block ~-1 ~ ~ #minecraft:stairs if block ~ ~ ~1 #minecraft:stairs if block ~ ~ ~-1 #minecraft:stairs run scoreboard players set @s head_crafting 1
+execute as @e[type=item,scores={head_crafting=1}] at @s run summon item ~ ~0.5 ~ {Item:{id:"minecraft:chicken_spawn_egg",Count:1b}}
+execute as @e[type=item,scores={head_crafting=1}] at @s run summon fireworks_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Trail:1,Colors:[I;15790320],FadeColors:[I;11743532]}],Flight:-1}}}}
+execute as @e[type=item,scores={head_crafting=1}] at @s run kill @e[type=item,distance=..1,nbt=!{Item:{id:"minecraft:chicken_spawn_egg"}}]

@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "#S#",
+        "SES",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "S": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:skeleton_spawn_egg",
+        "count": 1
+    },
+	"group": "eggs"
+}
